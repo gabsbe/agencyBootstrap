@@ -707,6 +707,63 @@ section,
 
 /* ----- Services ----- */
 
+.services .service-item {
+  position: relative;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+.services .service-item .icon {
+  margin-right: 20px;
+}
+
+.services .service-item .icon i {
+  color: #252525;
+  font-size: 25px;
+  line-height: 0;
+}
+
+/* titulo h4 */
+
+.services .service-item .title {
+  color: #2c4660;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.services .service-item .description {
+  color: #959595;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.services .service-item .readmore {
+  display: flex;
+  align-items: center;
+  color: #2c8ac0be;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.services .service-item .readmore i {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #2c8ac0be;
+}
+
+.services .service-item:hover .title,
+.services .service-item:hover .readmore,
+.services .service-item:hover .icon i {
+  color: #428bca;
+  transition: all 0.2s ease-in;
+}
+
+.services .service-item:hover .description {
+  color: #425bca;
+  transition: all 0.2s ease-in;
+}
+
 /* ----- Scroll to TOP ----- */
 
 .scroll-top {
