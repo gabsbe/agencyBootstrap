@@ -795,3 +795,28 @@ visibility: hidden;
   color: #428;
   }
 }
+
+/* ----- Call to Action Parallax ----- */
+
+.call-to-action {
+  padding: 100px 0;
+  position: relative;
+  clip-path: inset(0);
+}
+
+.call-to-action img {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.call-to-actio .container {
+  position: relative;
+  z-index: 3;
+  
+} 
