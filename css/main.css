@@ -1,28 +1,40 @@
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #394047; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #428bca; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #444444;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #394047;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #428bca;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #428bca; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #428bca; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #ffffff;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #428bca;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #444444;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #428bca;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -360,17 +372,19 @@ h6 {
 }
 
 .hero .carousel {
-width: 100%;
-min-height: 100vh; /* vh = viewport Height*/
-padding: 0;
-margin: 0;
-position: relative;
-background-color: var(--background-color);
+  width: 100%;
+  min-height: 100vh;
+  /* vh = viewport Height*/
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-color: var(--background-color);
 }
 
 .hero img {
   position: absolute;
-  inset: 0; /* Abrevia Área total // altura e largura*/
+  inset: 0;
+  /* Abrevia Área total // altura e largura*/
   display: block;
   width: 100%;
   height: 100%;
@@ -389,11 +403,11 @@ background-color: var(--background-color);
 
 .hero .carousel-item::before {
   content: "";
-  background:color-mix(in srgb, var(--background-color), transparent 50%);
+  background: color-mix(in srgb, var(--background-color), transparent 50%);
   position: absolute;
   inset: 0;
   z-index: 2;
-  
+
 }
 
 .hero .carousel-container {
@@ -518,7 +532,7 @@ section,
   .section {
     scroll-margin-top: 50px;
   }
-  
+
 }
 
 /* Global Title */
@@ -768,17 +782,17 @@ section,
 
 .scroll-top {
   position: fixed;
-right: 15px;
-bottom: 15px;
-z-index: 999999999;
-background-color: #428bca;
-width: 40px;
-height: 40px;
-border-radius: 8px;
-transition: all 0.4s;
-opacity: 0;
-visibility: hidden;
-box-shadow: 0px 0px 5px rgb(35, 35, 35);
+  right: 15px;
+  bottom: 15px;
+  z-index: 999999999;
+  background-color: #428bca;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  transition: all 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0px 0px 5px rgb(35, 35, 35);
 }
 
 .scroll-top.active {
@@ -790,10 +804,12 @@ box-shadow: 0px 0px 5px rgb(35, 35, 35);
   color: #f9f9f9;
   font-size: 24px;
 }
+
 .scroll-top:hover {
   background-color: #428f9f;
+
   i {
-  color: #428;
+    color: #428;
   }
 }
 
@@ -861,25 +877,7 @@ box-shadow: 0px 0px 5px rgb(35, 35, 35);
 
 /* ----- Portfolio ----- */
 
-.portfolio .portfolio-filters{
-  padding: 0;
-  margin: 0 auto 20px auto;
-  text-align: center;
-  list-style: none;
-}
-.portfolio .portfolio-filters li{
-  display: inline-block;
-  cursor: pointer;
-  padding: 0;
-  margin:0 10px;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-
-/* ----- Portfolio // Galeria // Produtos ----- */
-
-.portfolio .portfolio-filters { /* UL */
+.portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
   text-align: center;
@@ -895,7 +893,28 @@ box-shadow: 0px 0px 5px rgb(35, 35, 35);
   font-weight: 500;
 }
 
-.portfolio .portfolio-filters li:hover, .portfolio .portfolio-filters li.filter-active {
+
+/* ----- Portfolio // Galeria // Produtos ----- */
+
+.portfolio .portfolio-filters {
+  /* UL */
+  padding: 0;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  list-style: none;
+}
+
+.portfolio .portfolio-filters li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.portfolio .portfolio-filters li:hover,
+.portfolio .portfolio-filters li.filter-active {
   color: #425bca;
   font-weight: 600;
   transition: all .3s ease-in-out;
@@ -910,7 +929,8 @@ box-shadow: 0px 0px 5px rgb(35, 35, 35);
   transition: all .3s ease-in-out;
 }
 
-.portfolio .portfolio-content .portfolio-info { /* Estrutura dos icones */
+.portfolio .portfolio-content .portfolio-info {
+  /* Estrutura dos icones */
   position: absolute;
   inset: 0;
   z-index: 3;
@@ -924,7 +944,8 @@ box-shadow: 0px 0px 5px rgb(35, 35, 35);
   transform: scale(1.1);
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link, .portfolio .portfolio-content .portfolio-info .details-link {
+.portfolio .portfolio-content .portfolio-info .preview-link,
+.portfolio .portfolio-content .portfolio-info .details-link {
   position: absolute;
   color: white;
   font-size: 26px;
@@ -943,3 +964,67 @@ box-shadow: 0px 0px 5px rgb(35, 35, 35);
 .portfolio .portfolio-content:hover .portfolio-info {
   opacity: 1;
 }
+
+/* ----- Feedbacks ----- */
+
+.feedbacks .feedback-item {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 5px #06060641;
+  padding: 30px;
+  position: relative;
+  height: 100%;
+}
+
+.feedbacks .feedback-item .feedback-img {
+  width: 90px;
+  border-radius: 50px;
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+.feedbacks .feedback-item h3 {
+  font-size: 18px;
+  color: #262626a8;
+  margin: 10px 0 5px 0;
+}
+
+.feedbacks .feedback-item h4 {
+  font-size: 14px;
+  color: #060606ba;
+  margin: 5px 0 5px 0;
+}
+
+.feedbacks .feedback-item .stars {
+  margin: 10px 0;
+}
+
+.feedbacks .feedback-item .stars i {
+  color: #ffc107;
+  margin: 0 1px;
+}
+
+.feedbacks .feedback-item .quote-icon-left,
+.feedbacks .feedback-item .quote-icon-right {
+  color: #1777d8;
+  font-size: 20px;
+  line-height: 0;
+}
+
+.feedbacks .feedback-item .quote-icon-left {
+  position: relative;
+  left: -5px;
+  display: inline-block;
+}
+
+.feedbacks .feedback-item .quote-icon-right {
+  position: relative;
+  left: -5px;
+  display: inline-block;
+  transform: scale(-1);
+}
+
+.feedbacks .feedback-item p {
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
